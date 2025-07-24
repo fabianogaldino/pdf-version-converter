@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace fabianogaldino\PDFVersionConverter\Converter;
+namespace FabianoGaldino\PDFVersionConverter\Converter;
 
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
-use fabianogaldino\PDFVersionConverter\PdfVersionConverter;
+use FabianoGaldino\PDFVersionConverter\PdfVersionConverter;
 
 /**
  * @author Thiago Rodrigues <xthiago@gmail.com>

@@ -1,10 +1,10 @@
 <?php
 
-namespace fabianogaldino\PDFVersionConverter;
+namespace FabianoGaldino\PDFVersionConverter;
 
-use fabianogaldino\PDFVersionConverter\Converter\GhostscriptConverter;
-use fabianogaldino\PDFVersionConverter\Converter\GhostscriptConverterCommand;
-use fabianogaldino\PDFVersionConverter\Guesser\RegexGuesser;
+use FabianoGaldino\PDFVersionConverter\Converter\GhostscriptConverter;
+use FabianoGaldino\PDFVersionConverter\Converter\GhostscriptConverterCommand;
+use FabianoGaldino\PDFVersionConverter\Guesser\RegexGuesser;
 use Symfony\Component\Filesystem\Filesystem;
 
 class PdfVersionConverter

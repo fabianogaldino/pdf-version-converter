@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace fabianogaldino\PDFVersionConverter\Converter;
+namespace FabianoGaldino\PDFVersionConverter\Converter;
 
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
-use fabianogaldino\PDFVersionConverter\Guesser\RegexGuesser;
+use FabianoGaldino\PDFVersionConverter\Guesser\RegexGuesser;
 
 /**
  * @author Thiago Rodrigues <xthiago@gmail.com>

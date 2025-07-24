@@ -23,9 +23,9 @@ composer require fabianogaldino/pdf-version-converter
 Using simplified class PdfVersionConvert:
 
 ```php
-$contentConverted = (new \fabianogaldino\PDFVersionConverter\PdfVersionConverter)->convertTo14(file_get_contents($filename));
+$contentConverted = (new \FabianoGaldino\PDFVersionConverter\PdfVersionConverter)->convertTo14(file_get_contents($filename));
 
-$version = (new \fabianogaldino\PDFVersionConverter\PdfVersionConverter)->guess(file_get_contents($filename));
+$version = (new \FabianoGaldino\PDFVersionConverter\PdfVersionConverter)->guess(file_get_contents($filename));
 ```
 
 Guessing a version of PDF File:
@@ -37,7 +37,7 @@ Guessing a version of PDF File:
 require_once __DIR__.'/vendor/autoload.php'; 
 
 // import the namespaces
-use fabianogaldino\PDFVersionConverter\Guesser\RegexGuesser;
+use FabianoGaldino\PDFVersionConverter\Guesser\RegexGuesser;
 // [..]
 
 $guesser = new RegexGuesser();
@@ -54,8 +54,8 @@ require_once __DIR__.'/vendor/autoload.php';
 
 // import the namespaces
 use Symfony\Component\Filesystem\Filesystem,
-    fabianogaldino\PDFVersionConverter\Converter\GhostscriptConverterCommand,
-    fabianogaldino\PDFVersionConverter\Converter\GhostscriptConverter;
+    FabianoGaldino\PDFVersionConverter\Converter\GhostscriptConverterCommand,
+    FabianoGaldino\PDFVersionConverter\Converter\GhostscriptConverter;
 
 // [..]
 
