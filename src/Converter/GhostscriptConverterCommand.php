@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Xthiago\PDFVersionConverter\Converter;
+namespace fabianogaldino\PDFVersionConverter\Converter;
 
 use Symfony\Component\Process\Process;
 
@@ -20,9 +20,6 @@ use Symfony\Component\Process\Process;
  */
 class GhostscriptConverterCommand
 {
-    /**
-     * @var Filesystem
-     */
     protected $baseCommand = 'gs -sDEVICE=pdfwrite -dCompatibilityLevel=%s -dPDFSETTINGS=/screen -dQUIET ';
 
     protected $defaultFlags = '-dColorConversionStrategy=/LeaveColorUnchanged -dEncodeColorImages=false -dEncodeGrayImages=false -dEncodeMonoImages=false -dDownsampleMonoImages=false -dDownsampleGrayImages=false -dDownsampleColorImages=false -dAutoFilterColorImages=false -dAutoFilterGrayImages=false -dColorImageFilter=/FlateEncode -dGrayImageFilter=/FlateEncode';

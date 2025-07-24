@@ -7,22 +7,26 @@ PHP library for converting the version of PDF files (for compatibility purposes)
 
 ## Requirements
 
-- PHP 5.3+
+- PHP 7.2+
 - Ghostscript (gs command on Linux)
 
 ## Installation
 
-Run `php composer.phar require xthiago/pdf-version-converter dev-master` or add the follow lines to composer and run `composer install`:
+The package can be installed via composer:
 
-```
-{
-    "require": {
-        "xthiago/pdf-version-converter": "dev-master"
-    }
-}
+```bash
+composer require fabianogaldino/pdf-version-converter
 ```
 
 ## Usage
+
+Using simplified class PdfVersionConvert:
+
+```php
+$contentConverted = (new \fabianogaldino\PDFVersionConverter\PdfVersionConverter)->convertTo14(file_get_contents($filename));
+
+$version = (new \fabianogaldino\PDFVersionConverter\PdfVersionConverter)->guess(file_get_contents($filename));
+```
 
 Guessing a version of PDF File:
 
@@ -33,7 +37,7 @@ Guessing a version of PDF File:
 require_once __DIR__.'/vendor/autoload.php'; 
 
 // import the namespaces
-use Xthiago\PDFVersionConverter\Guesser\RegexGuesser;
+use fabianogaldino\PDFVersionConverter\Guesser\RegexGuesser;
 // [..]
 
 $guesser = new RegexGuesser();
@@ -50,8 +54,8 @@ require_once __DIR__.'/vendor/autoload.php';
 
 // import the namespaces
 use Symfony\Component\Filesystem\Filesystem,
-    Xthiago\PDFVersionConverter\Converter\GhostscriptConverterCommand,
-    Xthiago\PDFVersionConverter\Converter\GhostscriptConverter;
+    fabianogaldino\PDFVersionConverter\Converter\GhostscriptConverterCommand,
+    fabianogaldino\PDFVersionConverter\Converter\GhostscriptConverter;
 
 // [..]
 
